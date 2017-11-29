@@ -1,0 +1,8 @@
+.copy-item{
+    background: #ccc;
+}
+
+.item-copied{
+    background: #000;
+    color: #fff;
+}
