@@ -177,6 +177,18 @@
 			"code": "sudo mysql -uroot -p12345  supplychain < script.sql"
     }
   ]
+},
+{
+  "title": "Git",
+  "color": "#fff",
+  
+  
+  "items": [
+    {
+			"name": "dist to gh-pages",
+			"code": "git subtree push --prefix dist origin gh-pages"
+    }
+  ]
 }
 
 ]
