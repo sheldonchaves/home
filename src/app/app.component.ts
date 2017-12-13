@@ -32,7 +32,7 @@ export class AppComponent  implements OnInit{
 
   load() {
 
-    return this.http.get('/assets/data.json')
+    return this.http.get('assets/data.json')
     .map( response => response.json() )
     .toPromise();
 
