@@ -1,15 +1,46 @@
-<div
-  class="copy-item"
-  ngxClipboard
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 sidebar">
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Overview
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Analytics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Export</a>
+        </li>
+      </ul>
+    </nav>
 
-  [class.item-copied]= "isCopied1 === 't1'"
-  (cbOnSuccess)="isCopied1 = 't1'"
-  [cbContent]="sheldon">copiar</div>
+    <main role="main" class="col-md-10 columns">
 
-<div
-  class="copy-item"
-  ngxClipboard
-
-  [class.item-copied]= "isCopied1 === 't2'"
-  (cbOnSuccess)="isCopied1 = 't2'"
-  [cbContent]="sheldon">copiar</div>
+        <div class="code-table" *ngFor="let group of data" [style.color]="group.color">
+          <h2>{{group.title}}</h2>
+          <div class="table-responsive">
+            <table class="table table-striped table-hover table-sm">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th [style.color]="group.color">Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="item" *ngFor="let item of group.items">
+                  <td class="name">{{item.name}}</td>
+                  <td class="code" ngxClipboard [class.item-copied]="isCopied === item.code" (cbOnSuccess)="isCopied = item.code" [cbContent]="item.code">
+                    {{item.code}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </main>
+  </div>
+</div>

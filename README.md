@@ -1,27 +1,35 @@
 # Home
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
+ng build
 
-## Development server
+git subtree push --prefix dist origin gh-pages
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+Step 1
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Remove the dist directory from the project’s .gitignore file (it’s ignored by default by Yeoman).
 
-## Build
+Step 2
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Make sure git knows about your subtree (the subfolder with your site).
 
-## Running unit tests
+git add dist && git commit -m "Initial dist subtree commit"
+Step 3
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Use subtree push to send it to the gh-pages branch on GitHub.
 
-## Running end-to-end tests
+git subtree push --prefix dist origin gh-pages
+Boom. If your folder isn’t called dist, then you’ll need to change that in each of the commands above.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+If you do this on a regular basis, you could also create a script containing the following somewhere in your path:
 
-## Further help
+#!/bin/sh
+if [ -z "$1" ]
+then
+  echo "Which folder do you want to deploy to GitHub Pages?"
+  exit 1
+fi
+git subtree push --prefix $1 origin gh-pages
+Which lets you type commands like:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+git gh-deploy path/to/your/site

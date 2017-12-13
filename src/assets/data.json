@@ -1,0 +1,183 @@
+{
+  "groups": [{
+    "title": "Grep | find",
+    "color": "#EDC951",
+    "items": [{
+      "name": "Recursively Search All Files For A String",
+      "code": "grep -r 'string' ."
+    },
+    {
+      "name": "file type",
+      "code": "grep -r --include=*.txt 'val'"
+    },
+    {
+      "name": "ignore case",
+      "code": "grep -ri 'word' ."
+    },
+    {
+      "name": "specify directory name",
+      "code": "grep -r -l 'foo' /path/to/dir/*.java"
+    },
+    {
+      "name": "with find",
+      "code": "find /path/to/dir -type f -print0 | xargs -0 grep -l 'foo'"
+    },
+    {
+      "name": "grep multiple2",
+      "code": "grep -E 'word1|word2' *.doc"
+    },
+    {
+      "name": "grep multiple ignore case and color recursively",
+      "code": "grep -wir --color 'warning|error|critical' /var/log/"
+    },
+    {
+      "name": "search in file",
+      "code": "grep -qFx 'conteudo' 'arquivo.txt'"
+    }
+  ]
+},
+{
+  "title": "Angular CLI",
+  "color": "#FA2A00",
+  "items": [{
+    "name": "new app",
+    "code": "ng new app"
+  },
+  {
+    "name": "Component",
+    "code": "ng g component my-new-component"
+  },
+  {
+    "name": "Directive",
+    "code": "ng g directive my-new-directive"
+  },
+  {
+    "name": "Pipe",
+    "code": "ng g pipe my-new-pipe"
+  },
+  {
+    "name": "Service",
+    "code": "ng g service my-new-service"
+  },
+  {
+    "name": "Class",
+    "code": "ng g class my-new-class"
+  },
+  {
+    "name": "Guard",
+    "code": "ng g guard my-new-guard"
+  },
+  {
+    "name": "Interface",
+    "code": "ng g interface my-new-interface"
+  },
+  {
+    "name": "Enum",
+    "code": "ng g enum my-new-enum"
+  },
+  {
+    "name": "Module",
+    "code": "ng g module my-module"
+  },
+  {
+    "name": "build in dist + watch",
+    "code": "ng build --watch"
+  },
+  {
+    "name": "build with base",
+    "code": "ng build --prod --base-href 'https://sheldonchaves.github.io/proj1/'"
+  }
+]
+},
+{
+  "title": "Angular",
+  "color": "#FA2A00",
+	
+  
+  "items": [
+		{
+      "name": "html inline style",
+      "code": "[style.color]='item.color'"
+    },
+    {
+      "name": "html class",
+      "code": "[class.myclass]='value > 1'"
+    },
+    {
+      "name": "HostBinding property",
+      "code": "@HostBinding('class.yellow-style') apply:boolean = false;"
+    },
+    {
+      "name": "Renderer property ( constructor(...) )",
+      "code": "renderer.setElementStyle(el.nativeElement, 'color', '#ccc');"
+    }
+
+  ]
+},
+{
+  "title": "System",
+  "color": "#808080",
+	
+  
+  "items": [
+		{
+      "name": "ps java",
+      "code": "ps -ef | grep java"
+    }
+  ]
+},
+{
+  "title": "Node packages",
+  "color": "#00DFFC",
+  
+  
+  "items": [
+    {
+			"name": "font-awesome",
+			"code": "npm install --save bootstrap@4.0.0-alpha.6 font-awesome"
+    }
+  ]
+},
+{
+  "title": "SSH | SCP",
+  "color": "#ccc",
+  
+  
+  "items": [
+    {
+			"name": "copy to",
+			"code": "scp /path/to/file linkadm@192.168.200.201:/path/to/destination"
+    }
+  ]
+},
+{
+  "title": "Network",
+  "color": "#C7F464",
+  
+  
+  "items": [
+    {
+			"name": "show opened ports",
+			"code": "nmap 0.0.0.0"
+    },
+    {
+			"name": "test port 8080",
+			"code": "telnet 0.0.0.0 8080"
+    }
+  ]
+},
+{
+  "title": "Mysql",
+  "color": "#FC3A51",
+  
+  
+  "items": [
+    {
+			"name": "import dump",
+			"code": "sudo mysql -uroot -p12345  supplychain < script.sql"
+    }
+  ]
+}
+
+]
+}

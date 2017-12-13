@@ -19,6 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "reset.css",
         "../node_modules/bootstrap/scss/bootstrap.scss",
         "styles.css"
       ],

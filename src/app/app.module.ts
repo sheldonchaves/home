@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 
 import { ClipboardModule } from 'ngx-clipboard';
 
+import { HttpModule } from '@angular/http';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -13,9 +15,13 @@ import { ClipboardModule } from 'ngx-clipboard';
   imports: [
     BrowserModule,
     FormsModule,
-    ClipboardModule
+    ClipboardModule,
+    HttpModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
