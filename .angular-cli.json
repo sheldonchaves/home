@@ -20,6 +20,7 @@
       "prefix": "app",
       "styles": [
         "reset.css",
+        "../node_modules/font-awesome/scss/font-awesome.scss",
         "../node_modules/bootstrap/scss/bootstrap.scss",
         "styles.css"
       ],

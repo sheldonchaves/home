@@ -2,6 +2,7 @@
   "groups": [{
     "title": "Grep | find",
     "color": "#EDC951",
+    "icon": "fa-terminal",
     "items": [{
       "name": "Recursively Search All Files For A String",
       "code": "grep -r 'string' ."
@@ -39,6 +40,7 @@
 {
   "title": "Angular CLI",
   "color": "#FA2A00",
+  "icon": "fa-adn",
   "items": [{
     "name": "new app",
     "code": "ng new app"
@@ -92,8 +94,7 @@
 {
   "title": "Angular",
   "color": "#FA2A00",
-	
-  
+	"icon": "fa-adn",
   "items": [
 		{
       "name": "html inline style",
@@ -117,8 +118,7 @@
 {
   "title": "System",
   "color": "#808080",
-	
-  
+  "icon": "fa-terminal",
   "items": [
 		{
       "name": "ps java",
@@ -129,8 +129,7 @@
 {
   "title": "Node packages",
   "color": "#00DFFC",
-  
-  
+  "icon": "fa-file-code-o",
   "items": [
     {
 			"name": "font-awesome",
@@ -141,8 +140,7 @@
 {
   "title": "SSH | SCP",
   "color": "#ccc",
-  
-  
+  "icon": "fa-window-maximize",
   "items": [
     {
 			"name": "copy to",
@@ -153,8 +151,7 @@
 {
   "title": "Network",
   "color": "#C7F464",
-  
-  
+  "icon": "fa-sitemap",
   "items": [
     {
 			"name": "show opened ports",
@@ -169,8 +166,7 @@
 {
   "title": "Mysql",
   "color": "#FC3A51",
-  
-  
+  "icon": "fa-database",
   "items": [
     {
 			"name": "import dump",
@@ -180,9 +176,8 @@
 },
 {
   "title": "Git",
-  "color": "#fff",
-  
-  
+  "color": "#3A89C9",
+  "icon": "fa-git-square",
   "items": [
     {
 			"name": "dist to gh-pages",

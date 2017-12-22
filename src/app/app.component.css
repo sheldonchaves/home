@@ -1,3 +1,7 @@
+h2{
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+}
 
 
 h1 {
@@ -112,6 +116,8 @@ h1 {
 .code-table  .item .name{
   opacity: .7;
   padding: .3em .8em;
+  letter-spacing: -.04em;
+  font-size: 0.75em;
 }
 
 .code-table  .item .code{

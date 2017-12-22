@@ -12,34 +12,33 @@ import 'rxjs/Rx';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent  implements OnInit{
-
-  data:any;
-
+  
+  public dataCode:any;
+  public isCopied1:any;
+  
   constructor(public http:Http) {
     
   }
-
+  
   ngOnInit(){
-
-    this.load().then(
+    
+    this.loadCode().then(
       (data) => {
-        this.data = data.groups;
+        this.dataCode = data.groups;
       }
     );
-
-
+    
+    
   }
-
-  load() {
-
+  
+  loadCode() {
+    console.log("loadCode");
     return this.http.get('assets/data.json')
     .map( response => response.json() )
     .toPromise();
-
+    
   }
+  
+  
 
-
-  public isCopied1:any;
-
-  sheldon:string = "copiado do tsda sdas ddddasdd asd";
 }
