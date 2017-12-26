@@ -18,7 +18,7 @@ h1 {
 .table-sm td {
   padding: 0.3em .2em;
   font-size: .8rem;
-  line-height: 1.1rem;
+  /* line-height: 1.1rem; */
   font-weight: 600;
 }
 
@@ -63,68 +63,13 @@ h1 {
   background: #ccc;
 }
 
-.item-copied {
-  background: #fff;
-  color: #666;
-}
+
 
 .columns {
   position: fixed;
-  display: flex;
-  flex-wrap: wrap;
-  top: 15px;
-  left: calc(17% - 7px);
-  height: 97vh;
-  overflow-y: auto;
-  overflow-x: hidden;
+  top: 10px;
+  left: calc(8% - 7px);
+  padding: 0 0 0 20px;
 }
 
-.code-table {
-  padding: 0px 10px;
-  display: block;
-  background: rgba(0, 0, 0, .2);
-  margin: 5px;
-  color: #fff;
-  /* color: rgba(255, 255, 255, .6); */
-}
 
-.table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.table th, .table td {
-  border-top: none;
-}
-
-.table thead th {
-  vertical-align: bottom;
-  border-bottom: 1px solid ;
-}
-
-.table-hover tbody tr:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.nav-pills .nav-link.active, .nav-pills .nav-item.show .nav-link {
-  background-color: #2f3137;
-}
-
-.nav-link {
-  color: rgb(151, 151, 151);
-}
-
-.code-table  .item .name{
-  opacity: .7;
-  padding: .3em .8em;
-  letter-spacing: -.04em;
-  font-size: 0.75em;
-}
-
-.code-table  .item .code{
-  opacity: .9;
-  padding: .3em .8em;
-}
-
-.table-hover tbody tr:hover .code{
-  opacity: 1;
-}

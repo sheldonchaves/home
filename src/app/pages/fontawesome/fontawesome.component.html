@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col">
+      <input type="text" #searchInput (click)="searchInput.select()" [(ngModel)]="searchText">
+  </div>
+  <div class="col-3">
+      <div class="checkbox">
+          <label>
+            <input type="checkbox" [(ngModel)]="copyTag"> Copy with tag
+          </label>
+        </div>
+  </div>
+</div>
+
+<ul class="icons">
+  <a
+    *ngFor="let item of dataIcons | search : searchText"
+    ngxClipboard
+    class="fa {{'fa-' + item}}"
+    [class.copy]="isCopied === item"
+    (cbOnSuccess)="isCopied = item"
+    (click)="$event.stopPropagation()"
+    [cbContent]="copy(item)"
+    title="{{item}}"
+    >
+  </a>
+</ul>
