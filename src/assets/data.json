@@ -98,8 +98,26 @@
     },
     {
 			"name": "bootstrap 4 alpha",
-			"code": "npm install --save bootstrap@4.0.0-alpha.6"
+			"code": "npm install --save bootstrap@4.0.0-beta.3"
+    },
+    {
+			"name": "tether",
+			"code": "npm install --save tether"
+    },
+
+    {
+			"name": "primeng",
+			"code": "npm install --save primeng"
+    },
+
+    {
+			"name": "cookie service",
+			"code": "npm install --save ngx-cookie-service"
     }
+
+
+
+
   ]
 },
 
@@ -147,6 +165,11 @@
     {
       "name": "add .active when routerLink is current link",
       "code": "<a [routerLink]=''[ '/path' ]'' routerLinkActive=''active''>"
+    }
+,
+    {
+      "name": "add .active when routerLink is current link",
+      "code": "[className]='''style1'''>"
     }
 
 
