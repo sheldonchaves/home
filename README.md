@@ -2,9 +2,9 @@
 
 ng build --prod --base-href 'https://sheldonchaves.github.io/home/'
 
-
 git subtree push --prefix dist origin gh-pages
 
+git push origin --delete gh-pages
 
 Step 1
 
