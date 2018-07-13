@@ -1,0 +1,321 @@
+{
+  "groups": [{
+    "title": "Grep | find",
+    "color": "#ffec52",
+    "icon": "fa-terminal",
+    "items": [{
+      "name": "Recursively Search All Files For A String",
+      "code": "grep -r 'string' ."
+    },
+    {
+      "name": "file type",
+      "code": "grep -r --include=*.txt 'val'"
+    },
+    {
+      "name": "ignore case",
+      "code": "grep -ri 'word' ."
+    },
+    {
+      "name": "specify directory name",
+      "code": "grep -r -l 'foo' /path/to/dir/*.java"
+    },
+    {
+      "name": "with find",
+      "code": "find /path/to/dir -type f -print0 | xargs -0 grep -l 'foo'"
+    },
+    {
+      "name": "grep multiple2",
+      "code": "grep -E 'word1|word2' *.doc"
+    },
+    {
+      "name": "grep multiple ignore case and color recursively",
+      "code": "grep -wir --color 'warning|error|critical' /var/log/"
+    },
+    {
+      "name": "search in file",
+      "code": "grep -qFx 'conteudo' 'arquivo.txt'"
+    }
+  ]
+},
+{
+  "title": "Angular CLI",
+  "color": "#ff0000",
+  "icon": "fa-adn",
+  "items": [{
+    "name": "new app",
+    "code": "ng new app"
+  },
+  {
+    "name": "Component",
+    "code": "ng g component components/my-new-component"
+  },
+  {
+    "name": "Directive",
+    "code": "ng g directive directive/my-new-directive"
+  },
+  {
+    "name": "Pipe",
+    "code": "ng g pipe pipe/my-new-pipe"
+  },
+  {
+    "name": "Service",
+    "code": "ng g service service/my-new-service"
+  },
+  {
+    "name": "Class",
+    "code": "ng g class my-new-class"
+  },
+  {
+    "name": "Interface",
+    "code": "ng g interface my-new-interface"
+  },
+  {
+    "name": "Enum",
+    "code": "ng g enum my-new-enum"
+  },
+  {
+    "name": "Module",
+    "code": "ng g module my-module"
+  },
+  {
+    "name": "build in dist + watch",
+    "code": "ng build --watch"
+  },
+  {
+    "name": "build with base",
+    "code": "ng build --prod --base-href 'https://.../proj1/'"
+  }
+]
+},
+{
+  "title": "Node packages",
+  "color": "#43fff1",
+  "icon": "fa-file-code-o",
+  "items": [
+    {
+			"name": "font-awesome",
+			"code": "npm install --save font-awesome"
+    },
+    {
+			"name": "bootstrap 4 alpha",
+			"code": "npm install --save bootstrap@4.0.0-beta.3"
+    },
+    {
+			"name": "tether",
+			"code": "npm install --save tether"
+    },
+
+    {
+			"name": "primeng",
+			"code": "npm install --save primeng"
+    },
+
+    {
+			"name": "cookie service",
+			"code": "npm install --save ngx-cookie-service"
+    }
+
+
+
+
+  ]
+},
+
+{
+  "title": "Angular",
+  "color": "#ff5c3b",
+	"icon": "fa-adn",
+  "items": [
+		{
+      "name": "html inline style",
+      "code": "[style.width.px]='item.width'"
+    },
+    {
+      "name": "html class",
+      "code": "[class.myclass]='value > 1'"
+    },
+    {
+      "name": "binds attribute",
+      "code": "<div [attr.role]='myRole'>"
+    },
+    {
+      "name": "local variable ",
+      "code": "<video #movieplayer ...>"
+    },
+    {
+      "name": "safe navigation operator (employer is optional)",
+      "code": "<p>Employer: {{employer?.companyName}}</p>"
+    },
+    {
+      "name": "HostBinding property",
+      "code": "@HostBinding('class.yellow-style') apply:boolean = false;"
+    },
+    {
+      "name": "Renderer property ( constructor(...) )",
+      "code": "renderer.setElementStyle(el.nativeElement, 'color', '#ccc');"
+    },
+    {
+      "name": "simple routerLink (../ | ./)",
+      "code": "<a routerLink='/path'>"
+    },
+    {
+      "name": "routerLink (../ | ./)",
+      "code": "<a [routerLink]=''[ '/path' ]'' [queryParams]=''{ page: 1 }''>"
+    },
+    {
+      "name": "add .active when routerLink is current link",
+      "code": "<a [routerLink]=''[ '/path' ]'' routerLinkActive=''active''>"
+    }
+,
+    {
+      "name": "add .active when routerLink is current link",
+      "code": "[className]='''style1'''>"
+    }
+
+
+  ]
+},
+
+
+
+{
+  "title": "CSS",
+  "color": "#d568ff",
+  "icon": "fa-window-maximize",
+  "items": [
+    {
+			"name": "gradient",
+			"code": "background: linear-gradient(to right, #ccc 0%, #666 50%, #000 100%);"
+    },
+    
+    {
+			"name": "border dashed",
+			"code": "border: 2px dashed #1C6EA4;"
+    },
+    {
+			"name": "box-shadow",
+			"code": "box-shadow: 3px 3px 15px 2px rgba(0,0,0,0.20);"
+    },
+    
+    {
+			"name": "box-shadow inset",
+			"code": "box-shadow: inset 0px 0px 20px 2px rgba(0,0,0,0.40);"
+    },
+    {
+			"name": "element with no children",
+			"code": "div:empty"
+    },
+    {
+			"name": "first of some type",
+			"code": "p:first-of-type"
+    },
+    {
+			"name": "element that's not a span",
+			"code": ":not(span)"
+    },
+    {
+			"name": "second child of its parent",
+			"code": "p:nth-child(2)"
+    },
+    {
+			"name": "nth-child (an + b) formula",
+			"code": "p:nth-child(3n+1)"
+    },
+    {
+			"name": "links which open in new tab",
+			"code": "a[target='_blank']"
+    },
+    {
+			"name": "title attr containing a word",
+			"code": "[title~='chair']"
+    },
+     
+    {
+			"name": "specified input type",
+			"code": "input[type='button']"
+    },
+     
+    {
+			"name": "text column",
+			"code": "column-count: 3; column-gap: 10px; column-rule: 1px solid #ccc;"
+    }
+     
+
+  ]
+},
+{
+  "title": "Network",
+  "color": "#C7F464",
+  "icon": "fa-sitemap",
+  "items": [
+    {
+			"name": "show opened ports",
+			"code": "nmap 0.0.0.0"
+    },
+    {
+			"name": "test port 8080",
+			"code": "telnet 0.0.0.0 8080"
+    },
+    {
+			"name": "nslookup (name to ip )",
+			"code": "nslookup facebook.com"
+    }
+  ]
+},
+{
+  "title": "Mysql | SQL",
+  "color": "#ff5388",
+  "icon": "fa-database",
+  "items": [
+    {
+			"name": "import dump",
+			"code": "sudo mysql -uroot -p12345  supplychain < script.sql"
+    },
+    
+    {
+			"name": "simple join",
+			"code": "Select … from TABLE tab1 JOIN tab2 ON tab1.id = tab2.t1_id"
+    }
+
+  ]
+},
+{
+  "title": "Git",
+  "color": "#53b2ff",
+  "icon": "fa-git-square",
+  "items": [
+    {
+			"name": "dist to gh-pages",
+			"code": "git subtree push --prefix dist origin gh-pages"
+    }
+  ]
+},
+
+
+{
+  "title": "SSH | SCP",
+  "color": "#d2d2d2",
+  "icon": "fa-window-maximize",
+  "items": [
+    {
+			"name": "copy to",
+			"code": "scp /path/file user@10.10.0.1:/path/dest"
+    }
+  ]
+},
+
+{
+  "title": "System",
+  "color": "#8fa9b9",
+  "icon": "fa-terminal",
+  "items": [
+		{
+      "name": "ps java",
+      "code": "ps -ef | grep java"
+    }
+  ]
+}
+
+
+]
+}
