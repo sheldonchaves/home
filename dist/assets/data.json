@@ -238,6 +238,12 @@
     {
 			"name": "text column",
 			"code": "column-count: 3; column-gap: 10px; column-rule: 1px solid #ccc;"
+    
+    },
+     
+    {
+			"name": "transition all",
+			"code": "transition: all 0.5s ease;"
     }
      
 
@@ -287,6 +293,14 @@
     {
 			"name": "dist to gh-pages",
 			"code": "git subtree push --prefix dist origin gh-pages"
+    },
+    {
+			"name": "resolve conflict (theirs | ours)",
+			"code": "git checkout --theirs FILE"
+    },
+    {
+			"name": "create repository",
+			"code": "curl -u 'user:pass' https://api.github.com/user/repos -d '{\"name\":\"REPO\"}'"
     }
   ]
 },
