@@ -43,7 +43,7 @@
   "icon": "fa-adn",
   "items": [{
     "name": "new app",
-    "code": "ng new app"
+    "code": "ng new app --style=scss --routing"
   },
   {
     "name": "Component",
@@ -94,25 +94,25 @@
   "items": [
     {
 			"name": "font-awesome",
-			"code": "npm install --save font-awesome"
+			"code": "npm i --save font-awesome"
     },
     {
 			"name": "bootstrap 4 alpha",
-			"code": "npm install --save bootstrap@4.0.0-beta.3"
+			"code": "npm i --save bootstrap"
     },
     {
 			"name": "tether",
-			"code": "npm install --save tether"
+			"code": "npm i --save tether"
     },
 
     {
 			"name": "primeng",
-			"code": "npm install --save primeng"
+			"code": "npm i --save primeng"
     },
 
     {
 			"name": "cookie service",
-			"code": "npm install --save ngx-cookie-service"
+			"code": "npm i --save ngx-cookie-service"
     }
 
 
